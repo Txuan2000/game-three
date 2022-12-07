@@ -51,3 +51,26 @@ jobs:
       - name: Build
         run: |
           npm run build
+      - name: Publish
+        uses: selenehyun/gh-push@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.PUBLISH_ACCESS_TOKEN }}
+          COMMIT_FILES: docs/*
+          REPO_FULLNAME: Txuan2000/game-three.github.io
+          BRANCH: deploy
+#       - uses: lcdsmao/update-branch@v3
+#         with:
+#           # Or use personal access token
+#           token: ${{ secrets.GITHUB_TOKEN }}
+#           # One of MERGE, SQUASH, REBASE (default: MERGE)
+#           autoMergeMethod: SQUASH
+#           # Ignore pull requests without these labels
+#           requiredLabels: auto-merge
+#           # Required at least 2 approves (default: 0)
+#           requiredApprovals: 2
+#           # Required approvals from all requested reviewers
+#           allRequestedReviewersMustApprove: true
+#           # Required these status checks success
+#           requiredStatusChecks: |
+#             build_pr
+#             WIP
