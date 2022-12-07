@@ -34,7 +34,7 @@ export class GameComponent
     this.scene.add( this.cube );
     this.camera = new THREE.PerspectiveCamera( 75,  width/ height, 0.1, 1000 );
     this.renderer.setSize(width, height);
-    document.body.appendChild( this.renderer.domElement );
+    this.container.nativeElement.appendChild( this.renderer.domElement );
 
     this.camera.position.z = 3;
     this.animate();
