@@ -50,4 +50,4 @@ jobs:
           npm ci
       - name: Build
         run: |
-          npm run build --output-path docs  --base-href https://txuan2000.github.io/game-three/
+          npm run build
