@@ -1,0 +1,12 @@
+name: build Angular App
+
+on: 
+  push:
+    branches: [ main ]
+
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: a
+        run: ng build
