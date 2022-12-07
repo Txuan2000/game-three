@@ -55,8 +55,8 @@ jobs:
         uses: selenehyun/gh-push@master
         env:
           GITHUB_TOKEN: ${{ secrets.PUBLISH_ACCESS_TOKEN }}
-          COMMIT_FILES: docs/*
-          REPO_FULLNAME: Txuan2000/game-three.github.io
+          COMMIT_FILES: docs
+          REPO_FULLNAME: Txuan2000/game-three
           BRANCH: deploy
 #       - uses: lcdsmao/update-branch@v3
 #         with:
