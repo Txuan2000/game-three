@@ -15,7 +15,7 @@ import { DomHandler } from 'primeng/dom';
     GameRoutingModule,
   ],
   providers: [
-    DomHandler
+    DomHandler,
   ]
 })
 export class GameModule { }

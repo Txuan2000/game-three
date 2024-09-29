@@ -1,8 +1,7 @@
-:host {
-    .container {
-        height: calc(100vh - 85px);
+:host ::ng-deep {
+    #container {
+        height: calc(100% - 70px);
         width: 100%;
-        position: relative;
         background-color: red;
     }
 }
